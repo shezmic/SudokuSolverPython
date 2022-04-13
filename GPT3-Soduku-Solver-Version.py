@@ -26,7 +26,7 @@ def print_grid(grid):
 
 
 def possible(y,x,n) :
-	global grid
+
 	for i in range(0,9) :
 		if grid[y][i] == n:
 			return False
@@ -42,7 +42,7 @@ def possible(y,x,n) :
 	return True
 
 def solve() :
-	global grid
+	#global grid
 	for y in range(9):
 		for x in range(9):
 			if grid[y][x] == 0 :
